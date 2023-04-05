@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="appendChild">
+
+    </div>
+
+    <script>
+        //createElement()
+        let tambahdiv = document.createElement('div');
+        tambahdiv.id = 'tes';
+        tambahdiv.innerHTML = '<h1>Ini adalah hasil dari createElement()</h1>';
+        document.body.appendChild(tambahdiv);
+
+        //appendChild()
+        function buath2(isih2){
+            let h2 = document.createElement('h2');
+            h2.textContent = isih2;
+            return h2;
+        }
+        const inih2 = document.querySelector('#appendChild');
+        inih2.appendChild(buath2('Ini adalah'));
+        inih2.appendChild(buath2('hasil dari'));
+        inih2.appendChild(buath2('appendChild()'));
+
+        //innerHTML
+        let inner = document.createElement('ul')
+        inner.innerHTML = '<li>ini adalah contoh</li><li>innerHTML</li>';
+        document.body.appendChild(inner);
+    </script>
+</body>
+</html>
