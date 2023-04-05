@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tes">
+        <h1>Belajar yuk</h1>
+        <h1 class="section3">Ini Section 3</h1>
+    </div>
+    <div>
+        <h2>1. Get the parent element</h2>
+        <h2 class="s3">2. Get child elements</h2>
+        <h2>3. Get siblings of an element</h2>
+    </div>
+
+    <script>
+        //Get the parent element
+        let parentElemen = document.querySelector('.section3')
+        parentElemen.style.color = 'blue';
+
+        //Get child elements
+        let getChild = parentElemen.getChild;
+        let edit = document.getElementById('tes');
+        edit.style.color = 'red';
+
+        //Get siblings of an element
+        let pilih = document.querySelector('.s3');
+        let sibling = pilih.nextElementSibling;
+        sibling.style.color = 'pink';
+    </script>
+</body>
+</html>
