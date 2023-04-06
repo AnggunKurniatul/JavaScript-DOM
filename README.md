@@ -1,8 +1,8 @@
 # JavaScript DOM
 =====================================
 
-Nama : Anggun Kurniatul Hidayah
-Track : Front-end Web Development
+    Nama : Anggun Kurniatul Hidayah
+    Track : Front-end Web Development
 
 ## Challenge Class
 1. Pada artikel https://www.javascripttutorial.net/javascript-dom/ terdapat 8 section
