@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style type="text/css">
+        .check {
+            color: pink;
+        }
+    </style>
 </head>
 <body>
-    Belum Selesai
+    <h1 id="check" class="check">Ini contoh getComputedStyle()</h1>
+
+    <script>
+        //getComputedStyle
+        let check = document.querySelector('.check');
+        let style = getComputedStyle(check);
+
+        console.log('color:', style.color);
+
+        //className property
+        let p = document.querySelector('#check');
+        console.log(p.className);
+    </script>
 </body>
 </html>
