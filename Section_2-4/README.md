@@ -16,7 +16,7 @@
     <button id="check">Check getElementsByTagName</button>
 
 ### script js
-//getElementById()
+    //getElementById()
     const halo = document.getElementById('halo');
     halo.style.color = 'pink';
 
