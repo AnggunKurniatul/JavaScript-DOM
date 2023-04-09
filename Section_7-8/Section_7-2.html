@@ -5,8 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #button{
+            margin-bottom: 20px;
+        }
+        #scroll {
+            height: 200px;
+            width: 200px;
+            overflow: auto;
+            background-color: gray;
+        }
+
+        #scroll p {
+            height: 300px;
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
-    Belum Selesai
+    <button id="button">Klik Disini!</button>
+    <div id="scroll">
+        <p>scroll</p>
+    </div>
+
+    <div id="buttonScroll">
+        <button id="scrollRight">Scroll Right</button>
+        <button id="scrollDown">Scroll Down</button>
+    </div>
+
+    <script>
+        //JavaScript DOMContentLoaded
+        let button = document.getElementById('button');
+        button.addEventListener('click', (e) => {
+            console.log('button telah di klik');
+        });
+
+        //JavaScript Scroll Events
+        let control = document.querySelector('#buttonScroll');
+
+        control.addEventListener('click', function (e) {
+            let contentScroll = document.getElementById('scroll');
+            let button = e.target;
+            switch (button.id) {
+                case 'scrollRight':
+                    contentScroll.scrollLeft += 20;
+                    break;
+
+                case 'scrollDown':
+                    contentScroll.scrollTop += 20;
+                    break;
+            }
+        });
+    </script>
 </body>
 </html>
