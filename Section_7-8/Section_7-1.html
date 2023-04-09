@@ -7,6 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    Belum Selesai
+    <button id="button">Klik disini dong</button>
+
+    <script>
+        //JavaScript Events
+        let btn = document.querySelector('#button');
+
+        btn.addEventListener('click',function() {
+            alert('Terima Kasih');
+        });
+
+        //JavaScript Page Load Events
+        addEventListener('DOMContentLoaded', (event) => {
+            console.log('The DOM is fully loaded.');
+        });
+    </script>
 </body>
 </html>
